@@ -29,8 +29,11 @@ class get_request():
   def url_params(self):
 
     name = self.name
-
+    # Hulk = 'intelligence': '88',
+    # Captain America = 'intelligence': '69'
+    # Thanos  = 'intelligence': '100',
     path = '2619421814940190' + '/' + str(self.id)
+    # path = '2619421814940190' + '/' + 'search/Thanos'
     url_adress = self.url_adress
 
     response = requests.get(url=url_adress + path)
@@ -49,14 +52,15 @@ class get_request():
 if __name__ == '__main__':
   # data_ = {"response": "success", "id": "70", "name": "Batman"
 
-  # url = 'https://54seo.ru/ '
+
   # url = 'http://httpbin.org/'
   # url = 'https://www.superheroapi.com/api.php/2619421814940190/'
   url_ = 'https://superheroapi.com/api/'
   start_test_request = get_request(url_)
-  start_test_request.id = 70
-  start_test_request.name = 'Batman'
+  start_test_request.id = 655
+
   # start_test_request.event_calling()
   answer = start_test_request.url_params()
   # pprint(answer.content)
   pprint(answer.json())
+  pprint("THAT'S A COOL HERO BETWEEN THE ALL HEROES!")
