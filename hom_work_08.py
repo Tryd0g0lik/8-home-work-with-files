@@ -55,13 +55,18 @@ class Url(Keys_host):
       self.params['limit'] = str(self.limit)
 
     response =  requests.get(url  = href, headers = header, params = self.params)
-    print(response.status_code)
-    return response.json()
 
+    return response
+
+  def __str__(self):
+    return Url.look_file(self).json()
   # def Look_files(self):
   #   Url.look_file()
   #   params = {}
 
+class Upload(Keys_host):
+  def __init__(self):
+    pass
 
 
 #
@@ -136,6 +141,7 @@ if __name__ == '__main__':
   # (properties_url.Look_files())
   properties_url.media_type = (str(file_type['img'])).strip("'")
   properties_url.limit = 150
+  pprint(properties_url.__str__())
   # properties_url.folder = "Файлы"
 
 
