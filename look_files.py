@@ -4,7 +4,7 @@ from pprint import pprint
 from urllib.parse import urlparse
 
 token = 'AQAAAAAEHsPoAADLW4SZ-XnrG0fgq7H0CmynvHw'
-
+# Как настраивать доступ к папкам/подразделам на Ya-disk?
 
 # Task # 2
 
@@ -63,10 +63,6 @@ class Url(Keys_host):
   # def Look_files(self):
   #   Url.look_file()
   #   params = {}
-
-class Upload(Keys_host):
-  def __init__(self):
-    pass
 
 
 #
@@ -152,9 +148,7 @@ if __name__ == '__main__':
   answered = properties_url.look_file()
   pprint(answered)
 
-  # url = 'v1/disk/resources/upload'
-  # path = 'E:/ХЛАМ/загрузка/'
-  # '\Screenshot_7.png'
+
 
 
 
