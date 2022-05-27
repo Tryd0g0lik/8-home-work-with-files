@@ -3,7 +3,7 @@ import Hulk as h
 from pprint import pprint
 from urllib.parse import urlparse
 
-token = 'AQAAAAAEHsPoAADLW4SZ-XnrG0fgq7H0CmynvHw'
+token = '....'
 # Как настраивать доступ к папкам/подразделам на Ya-disk?
 
 # Task # 2

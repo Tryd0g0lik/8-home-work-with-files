@@ -5,7 +5,7 @@ from look_files import Keys_host as keys
 from look_files import Url
 
 # import look_files
-token = 'AQAAAAAEHsPoAADLW4SZ-XnrG0fgq7H0CmynvHw'
+token = '....'
 
 key_ = keys()
 
@@ -74,4 +74,3 @@ if __name__ ==  '__main__':
 
   # href.
   # pprint(href)
-  pass
