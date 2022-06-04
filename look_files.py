@@ -1,4 +1,5 @@
 import requests
+import requests
 import Hulk as h
 from pprint import pprint
 from urllib.parse import urlparse

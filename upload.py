@@ -69,8 +69,3 @@ if __name__ ==  '__main__':
   # upload.floder = 'Файлы'
 
   upload.upload_file('Screenshot_7.png')
-
-  # print(Upload.upload_file(self=upload))
-
-  # href.
-  # pprint(href)
